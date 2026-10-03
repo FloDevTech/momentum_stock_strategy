@@ -1,0 +1,42 @@
+schema: spec-driven
+
+context: |
+  Workspace status: research-only bootstrap; no executable project markers discovered.
+  Intended system: Python backend, responsive web frontend, and local-first deployment.
+  Scope: systematic US common-stock momentum portfolio with a separate defensive ETF universe.
+  Broker: IBKR only; paper trading precedes funded execution.
+  Data: free-tier Massive EOD and permitted sources only; automated Yahoo ingestion is excluded.
+  Persistence: hybrid OpenSpec plus Engram.
+  Product functionality is intentionally not initialized by this phase.
+
+projects: []
+
+testing:
+  strict_tdd: false
+  workspace_test_command: ""
+  capabilities:
+    projects: []
+    reason: "No supported project markers or workspace-wide test command were found."
+
+rules:
+  proposal:
+    - Keep scope within the authorized change.
+    - Include data-source permission and provenance considerations when relevant.
+  specs:
+    - Use Given/When/Then scenarios and RFC 2119 keywords.
+  design:
+    - Record rationale for data provenance, execution safety, and regime decisions.
+  tasks:
+    - Keep work units independently verifiable and recoverable.
+  apply:
+    guidelines:
+      - Do not expose broker credentials to the frontend.
+      - Keep providers and broker integrations behind adapters.
+    tdd: false
+    test_command: ""
+  verify:
+    test_command: ""
+    build_command: ""
+    coverage_threshold: 0
+  archive:
+    - Preserve audit history and warn before destructive delta merges.

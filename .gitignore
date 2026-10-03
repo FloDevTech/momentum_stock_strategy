@@ -1,0 +1,49 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets/
+credentials/
+
+# Copyrighted local research sources
+books/*.pdf
+
+# Local data and databases
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node and web build output
+node_modules/
+.next/
+dist/
+build/
+coverage/
+
+# Editor and OpenCode local state
+.vscode/
+.idea/
+.opencode/cache/
+.opencode/logs/
+.opencode/sessions/
+*.local.json
+*.local.jsonc
